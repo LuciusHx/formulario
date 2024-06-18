@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+</head>
+<body>
+    <!-- Título -->
+    <div>
+        <h1 class="titulo">Cadastro 1</h1>
+    </div>
+    <div>
+        <h1 class="titulo">Cadastro 2</h1>
+    </div>
+    <div>
+        <h1 class="titulo">Cadastro 3</h1>
+    </div>
+    <form action="">
+        <fieldset>
+            <!-- ----- NOME E SOBRENOME ----- -->
+            <div>
+                <label for="">
+                    firstname
+                </label>
+                <input type="text" name="firstname" id="firstnome">
+            </div>
+            <div>
+                <label for="">
+                    Lastname
+                </label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+            
+        </fieldset>
+        <fieldset>
+            <!-- ----- EMAIL E SENHA ----- -->
+            <div>
+                <label for="">
+                    Email
+                </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="">
+                    Senha
+                </label>
+                <input type="password" name="password" id="password">
+            </div>
+        </fieldset>
+        <!-- ----- DATA ----- -->
+        <div>
+            <label for="">Date of Birth</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <!-- ----- AREA DE ATUACAO ----- -->
+        <div>
+            <label for="">
+                Curso:
+            </label>
+            <label for="">
+                <input type="radio">Front-End
+            </label>
+            <label for="">
+                <input type="radio">Back-End
+            </label>
+            <label for="">
+                <input type="radio">Full-Stack
+            </label>
+        </div>
+        <!-- ----- TURNO ----- -->
+        <div>
+            <label for="">Turno</label>
+            <select>
+                <option selected disabled>Selecione</option>
+                <option value="">Manhã</option>
+                <option value="">Tarde</option>
+                <option value="">Noite</option>
+            </select>
+        </div>
+        <!-- ----- BOTAO ----- -->
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
