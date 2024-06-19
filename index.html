@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 </head>
 <body>
     <!-- Título -->
@@ -12,15 +12,15 @@
         <h1 class="titulo">Cadastro</h1>
     </div>
     <form action="" class="form">
-        <fieldset>
+        <fieldset class="grupo">
             <!-- ----- NOME E SOBRENOME ----- -->
-            <div>
+            <div class="campo">
                 <label for="">
                     Firstname
                 </label>
                 <input type="text" name="firstname" id="firstnome">
             </div>
-            <div>
+            <div class="campo">
                 <label for="">
                     Lastname
                 </label>
@@ -28,15 +28,15 @@
             </div>
             
         </fieldset>
-        <fieldset>
+        <fieldset class="grupo">
             <!-- ----- EMAIL E SENHA ----- -->
-            <div>
+            <div class="campo">
                 <label for="">
                     Email
                 </label>
                 <input type="email" name="email" id="email">
             </div>
-            <div>
+            <div class="campo">
                 <label for="">
                     Senha
                 </label>
@@ -45,24 +45,29 @@
         </fieldset>
         <!-- ----- DATA ----- -->
         <div>
-            <label for="">Date of Birth</label>
-            <input type="date" name="date" id="date">
+            <div class="campo">
+                <label for="">Date of Birth</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <br>
+            <!-- ----- AREA DE ATUACAO ----- -->
+            <div>
+                <label for="">
+                    Curso:
+                </label>
+                <label for="">
+                    <input type="radio">Front-End
+                </label>
+                <label for="">
+                    <input type="radio">Back-End
+                </label>
+                <label for="">
+                    <input type="radio">Full-Stack
+                </label>
+            </div>
         </div>
-        <!-- ----- AREA DE ATUACAO ----- -->
-        <div>
-            <label for="">
-                Curso:
-            </label>
-            <label for="">
-                <input type="radio">Front-End
-            </label>
-            <label for="">
-                <input type="radio">Back-End
-            </label>
-            <label for="">
-                <input type="radio">Full-Stack
-            </label>
-        </div>
+        <br>
+       
         <!-- ----- TURNO ----- -->
         <div>
             <label for="">Turno</label>
@@ -73,6 +78,7 @@
                 <option value="">Noite</option>
             </select>
         </div>
+        <br>
         <!-- ----- BOTAO ----- -->
         <button type="submit">Cadastrar</button>
     </form>
